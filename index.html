@@ -1,1 +1,357 @@
-테스트 화면 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jun Cheol Lee · Visual Designer & Web Publisher</title>
+    <meta
+      name="description"
+      content="Portfolio of Jun Cheol Lee, a visual designer and web publisher crafting expressive digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-gradient"></div>
+
+    <header class="site-header" id="home">
+      <div class="container">
+        <a class="site-header__brand" href="#home">JC Studio</a>
+
+        <button
+          class="site-header__toggle"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="site-header__toggle-line"></span>
+          <span class="site-header__toggle-line"></span>
+          <span class="site-header__toggle-line"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="site-header__nav"
+          aria-label="Primary navigation"
+        >
+          <ul class="site-header__menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-reveal>
+        <div class="container hero__content">
+          <div class="hero__intro" data-parallax data-parallax-speed="0.35">
+            <p class="hero__eyebrow">Visual Designer / Web Publisher</p>
+            <h1 class="hero__title">
+              Hi, I’m <span>Jun Cheol Lee</span><br />
+              crafting liquid-glass digital experiences.
+            </h1>
+            <p class="hero__subtitle">
+              I blend brand storytelling, fluid motion, and scalable front-end systems to help
+              modern brands feel alive across every screen.
+            </p>
+            <div class="hero__cta">
+              <a class="button button--primary" href="#work">View My Work</a>
+              <a class="button button--ghost" href="#contact">Let’s Collaborate</a>
+            </div>
+          </div>
+          <div class="hero__profile glass-panel" data-parallax data-parallax-speed="0.18">
+            <div class="hero__avatar">
+              <span class="hero__avatar-glow"></span>
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80"
+                alt="Portrait of Jun Cheol Lee"
+              />
+            </div>
+            <div class="hero__meta">
+              <div data-parallax-child data-parallax-speed="0.5">
+                <h2>12+</h2>
+                <p>Brands Elevated</p>
+              </div>
+              <div data-parallax-child data-parallax-speed="0.35">
+                <h2>08</h2>
+                <p>Years Experience</p>
+              </div>
+              <div data-parallax-child data-parallax-speed="0.6">
+                <h2>∞</h2>
+                <p>Ideas in Motion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about" data-reveal>
+        <div class="container section__inner">
+          <div class="section__header">
+            <h2>About Me</h2>
+            <p>Designing at the intersection of emotion and function.</p>
+          </div>
+          <div class="about">
+            <div class="about__image glass-panel">
+              <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
+                alt="Jun Cheol collaborating in a studio"
+              />
+            </div>
+            <div class="about__content">
+              <p>
+                I’m Jun Cheol, a Seoul-based visual designer and web publisher focused on translating
+                intentional ideas into sensory digital experiences. From brand launchpads to editorial
+                storytelling, I help teams express their voice with clarity, intuition, and motion.
+              </p>
+              <p>
+                My toolkit blends design systems, rapid prototyping, and pixel-perfect development to
+                deliver responsive, accessible, and immersive web journeys.
+              </p>
+              <div class="about__skills">
+                <div class="about__skill-group">
+                  <h3>Design</h3>
+                  <ul>
+                    <li>Brand Identity</li>
+                    <li>UI/UX Strategy</li>
+                    <li>Motion Systems</li>
+                    <li>Design Ops</li>
+                  </ul>
+                </div>
+                <div class="about__skill-group">
+                  <h3>Tools</h3>
+                  <ul>
+                    <li>Figma / FigJam</li>
+                    <li>Photoshop &amp; Illustrator</li>
+                    <li>After Effects</li>
+                    <li>Webflow &amp; Spline</li>
+                  </ul>
+                </div>
+                <div class="about__skill-group">
+                  <h3>Publishing</h3>
+                  <ul>
+                    <li>Semantic HTML</li>
+                    <li>CSS / SCSS Architecture</li>
+                    <li>Responsive Systems</li>
+                    <li>Motion Micro-Interactions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section--work">
+        <div class="container section__inner">
+          <div class="section__header" data-reveal>
+            <h2>Selected Work</h2>
+            <p>Immersive brand and product stories crafted for a multi-sensory web.</p>
+          </div>
+          <div class="work-grid">
+            <article class="project-card glass-panel" data-reveal>
+              <div class="project-card__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                  alt="Project Aura UI"
+                />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span>Branding</span>
+                  <span>Web Design</span>
+                </div>
+                <h3>Project Aura UI</h3>
+                <p>
+                  A sensory brand refresh and interactive website for Aura — merging animated gradients with fluid product storytelling.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card glass-panel" data-reveal>
+              <div class="project-card__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
+                  alt="Nebula Motion Lab"
+                />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span>Motion</span>
+                  <span>Product Launch</span>
+                </div>
+                <h3>Nebula Motion Lab</h3>
+                <p>
+                  Immersive product launch experience with dynamic motion choreography and layered glass UI panels.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card glass-panel" data-reveal>
+              <div class="project-card__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                  alt="Fluidity Design System"
+                />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span>Design System</span>
+                  <span>Front-end</span>
+                </div>
+                <h3>Fluidity Design System</h3>
+                <p>
+                  Modular design system with glassmorphism components and code-ready handoff for a fintech ecosystem.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card glass-panel" data-reveal>
+              <div class="project-card__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80"
+                  alt="Celestial Soundscapes"
+                />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span>Web Design</span>
+                  <span>Interactive</span>
+                </div>
+                <h3>Celestial Soundscapes</h3>
+                <p>
+                  Interactive sound visualization microsite featuring responsive 3D gradients and layered glass panels.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--skills" data-reveal>
+        <div class="container section__inner">
+          <div class="section__header">
+            <h2>Core Capabilities</h2>
+            <p>Crafting brand-first digital ecosystems with motion, code, and clarity.</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card glass-panel">
+              <h3>Design Vision</h3>
+              <p>
+                Developing multi-platform visual languages, immersive landing pages, and modular design systems.
+              </p>
+              <div class="skill-card__tags">
+                <span>Design Systems</span>
+                <span>Brand Storytelling</span>
+                <span>UI Kits</span>
+              </div>
+            </div>
+            <div class="skill-card glass-panel">
+              <h3>Web Publishing</h3>
+              <p>
+                Building responsive, accessible, and high-performance experiences with semantic HTML, CSS, and JS.
+              </p>
+              <div class="skill-card__tags">
+                <span>HTML / CSS</span>
+                <span>GSAP Lite</span>
+                <span>Accessibility</span>
+              </div>
+            </div>
+            <div class="skill-card glass-panel">
+              <h3>Motion &amp; Interaction</h3>
+              <p>
+                Bringing interfaces to life with micro-interactions, scroll choreography, and cinematic transitions.
+              </p>
+              <div class="skill-card__tags">
+                <span>After Effects</span>
+                <span>Protopie</span>
+                <span>Web Animations</span>
+              </div>
+            </div>
+            <div class="skill-card glass-panel">
+              <h3>Collaboration</h3>
+              <p>
+                Leading cross-disciplinary sprints, facilitating workshops, and bridging design-to-dev handoff.
+              </p>
+              <div class="skill-card__tags">
+                <span>Design Ops</span>
+                <span>Workshops</span>
+                <span>Documentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact" data-reveal>
+        <div class="container section__inner section__inner--tight">
+          <div class="contact glass-panel">
+            <div class="contact__info">
+              <h2>Let’s build something luminous.</h2>
+              <p>
+                Currently open for collaborations, full-time roles, and speaking engagements. Drop a note and I’ll
+                respond within 48 hours.
+              </p>
+              <ul class="contact__links">
+                <li>
+                  <span>Email</span>
+                  <a href="mailto:hello@juncheol.design">hello@juncheol.design</a>
+                </li>
+                <li>
+                  <span>Behance</span>
+                  <a href="https://www.behance.net" target="_blank" rel="noopener">behance.net/juncheol</a>
+                </li>
+                <li>
+                  <span>Dribbble</span>
+                  <a href="https://dribbble.com" target="_blank" rel="noopener">dribbble.com/jcdesign</a>
+                </li>
+                <li>
+                  <span>Instagram</span>
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener">@juncheol.studio</a>
+                </li>
+                <li>
+                  <span>GitHub</span>
+                  <a href="https://github.com/Leejuncheol102611" target="_blank" rel="noopener"
+                    >github.com/Leejuncheol102611</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form class="contact__form" action="#" method="post" novalidate>
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" name="name" id="name" placeholder="Name" required />
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" required />
+              <label for="message" class="sr-only">Message</label>
+              <textarea name="message" id="message" rows="5" placeholder="Tell me about your project"></textarea>
+              <button type="submit" class="button button--primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="current-year"></span> Jun Cheol Lee. Crafted for the future of liquid-glass design.</p>
+        <div class="site-footer__links">
+          <a href="#home">Back to top</a>
+          <a href="mailto:hello@juncheol.design">Email</a>
+          <a href="https://github.com/Leejuncheol102611" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
